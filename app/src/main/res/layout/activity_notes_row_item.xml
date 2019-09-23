@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/waktuRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tanggal"/>
+
+            <TextView
+                android:id="@+id/judulRow"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/deskripsiRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="deskripsi"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
